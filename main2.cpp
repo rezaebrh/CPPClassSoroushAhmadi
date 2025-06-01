@@ -5,13 +5,14 @@ using namespace std;
 // aaaabbxxxxaaxa => abxaxa
 // AaabbBBBCc => AabBCc
 
+//Removing the duplicate cahrs for the base functionality
 string remove_duplicates(string text) {
     char text2_char[text.size() + 1];
     text2_char[0] = text[0];
     int text2_index = 1;
     for (int i = 1; i < text.size(); ++i)
         if (text[i - 1] != text[i])
-            text2_char[text2_index++] = text[i];
+            text2_char[text2_index++] = text[i];//Does not this reassign in each iteration  ?
     text2_char[text2_index] = 0;
     return string(text2_char);
 }
