@@ -10,9 +10,11 @@ void reverse_slice(int arr[], unsigned int n, unsigned int start_index, unsigned
 }
 
 int main() {
+    cout << "First mention how many numbers do you want to inset: " << endl;	
     int n;
     cin >> n;
     int elements[n];
+    cout << "Please insert the numbers: " << endl;
     for (int i = 0; i < n; i++)
         cin >> elements[i];
     cout << elements[0] << " ";
